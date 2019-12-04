@@ -1,0 +1,53 @@
+#tipo {
+    background: rgb(246, 236, 253);
+}
+.tipo h3, h4{ /*Centramos el texto*/
+    text-align: center;
+}
+
+.tipo .contenedor { /*Utilizamos flexbox para posicionar*/
+    display: flex; 
+    justify-content: center; /*Situamos el contenido en el centro*/ 
+    flex-wrap: wrap; /*Si no entra algun elemento que se situe abajo*/
+}
+
+.tipo article {
+    margin: 15px;
+    text-align: center;
+    background-color:rgb(170, 164, 164) ;
+    border-radius: 30px;
+}
+.texto {
+    display: block;
+    position:relative;
+    text-align: left;
+    padding-left: 4vw;
+    padding-right: 2vw;
+}
+
+.tipo img {
+    border-radius: 40px;
+    padding-top: 2vh;
+    width: 100%; /*Le damos un ancho del 100%*/
+    max-width: 280px; /*Pongo esto para evitar que la imagen tenga un ancho mayor de 280 px*/
+    
+}
+
+/*Funcionamiento*/
+
+#funcionamiento {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+}
+
+#funcionamiento iframe {
+    border-radius: 30px;
+}
+
+#funcionamiento article {
+    margin: 15px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.945);
+    border-radius: 30px;
+}
+
