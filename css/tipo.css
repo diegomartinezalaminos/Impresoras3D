@@ -50,10 +50,19 @@
     border-radius: 30px;
 }
 
-@media (max-width:400px) {
+@media (max-width:430px) {
     iframe {
         height: 200px;
         width: 300px;
     }
 }
+
+@media (max-width:302px) {
+    iframe {
+        height: 200px;
+        width: 240px;
+    }
+}
+
+
 
