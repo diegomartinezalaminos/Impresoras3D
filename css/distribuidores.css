@@ -16,22 +16,22 @@
     padding-left: 6vw;
     padding-right: 6vw;
     padding-top: 3vh;
+
 }
 
-.distribuidores01 a{
+#distribuidores01 a{
     text-decoration: none;
     color: black;
 }
 
 .distribuidores02 {
-    float: left;
+    /*float: left;*/
     padding-left: 6vw;
     padding-right: 6vw;
     padding-top: 3vh;
 }
 
-
-.distribuidores02 a{
+#distribuidores02 a{
     text-decoration: none;
     color: black;
 }

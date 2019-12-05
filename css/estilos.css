@@ -5,6 +5,7 @@
 @import url(info.css);
 @import url(introduccion.css);
 @import url(distribuidores.css);
+@import url(movimiento.css);
 
 * {
     margin: 0;

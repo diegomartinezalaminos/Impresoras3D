@@ -1,0 +1,37 @@
+.IzquierdaDerecha{
+    transition: all 1s;
+    transform: translateX(0vw);
+}
+
+.izquierda{
+    transition: all 1s;
+    transform: translateX(-100vw);
+}
+.derecha{
+    transition: all 1s;
+    transform: translateX(+100vw);
+}
+
+.opacidad0 {
+    transition: all 3s;
+    opacity: 0;
+}
+.opacidad1 {
+    transition: all 3s;
+    opacity: 1;
+}
+
+@media (max-width:1024px){
+    .izquierda{
+        transform: translateX(0vw);
+    }
+    .derecha{
+        transform: translateX(0vw);
+    }
+}
+
+@media (max-width:1024px){
+    .opacidad0{
+        opacity: 1;
+    }
+}

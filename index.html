@@ -7,6 +7,7 @@
     <title>IMPRESORAS_3D</title>
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <script  src="js/mover.js"></script>
 </head>
 <body>
     <header>
@@ -55,12 +56,12 @@
         </div>
     </section>
 
-    <section class = "tipo" id="tipo">
+    <section class = "tipo" onmouseover = "aparecer('tipo1');aparecer('tipo2');aparecer('tipo3');aparecer('tipo4');aparecer('tipo5');aparecer('tipo6')">
         <br>
         <h3>Tipos de Impresora 3D: </h3>
         <div class="contenedor">
             <!--Para crear los articles con las imagenes y el h4 se puede hacer mas rápido con article*3>img+h4-->
-            <article>
+            <article class="opacidad0" id="tipo1">
                 <img src="img/article1.jpg" >
                 <h4>Impresora FDM: </h4>
                 <div class="texto">
@@ -71,7 +72,7 @@
                     <p>usuarios particulares.</p><br>
                 </div>
             </article>
-            <article>
+            <article class="opacidad0" id="tipo2">
                 <img src="img/article2.jpg" >
                 <h4>Impresora SLA:</h4>
                 <div class="texto">
@@ -84,7 +85,7 @@
                     <p>tecnología requiere un mayor mantenimiento y son mucho más caras.</p><br>
                 </div>
             </article>
-            <article>
+            <article class="opacidad0" id="tipo3">
                 <img src="img/article3.jpg" >
                 <h4>Impresora DLP:</h4>
                 <div class="texto">
@@ -95,7 +96,7 @@
                     <p>las SLA.</p><br>
                 </div>
             </article>
-            <article>
+            <article class="opacidad0" id="tipo4">
                 <img src="img/article3.jpg" >
                 <h4>Impresora SLS:</h4>
                 <div class="texto">
@@ -106,7 +107,7 @@
                     <p>prototipos funcionales y de series cortas, principalmente por empresas.</p><br>
                 </div>
             </article>
-            <article>
+            <article class="opacidad0" id="tipo5">
                 <img src="img/article3.jpg" >
                 <h4>Impresora SLM: </h4>
                 <div class="texto">
@@ -119,7 +120,7 @@
                     <p>propiedades especiales.</p><br>
                 </div>
             </article>
-            <article>
+            <article class="opacidad0" id="tipo6">
                 <img src="img/article3.jpg" >
                 <h4>Impresora BJ:</h4>
                 <div class="texto">
@@ -134,12 +135,12 @@
     </section>
 
 
-    <section class = "tipo" id="funcionamiento">
+    <section class = "tipo" id="funcionamiento" onmouseover = "IzquierdaDerecha('iframe1');IzquierdaDerecha('iframe2');IzquierdaDerecha('iframe3');IzquierdaDerecha('iframe4');IzquierdaDerecha('iframe5');IzquierdaDerecha('iframe6');">
         <br>
         <h3>Tipos de Impresora 3D: </h3>
         <div class="contenedor">
             <!--Para crear los articles con las imagenes y el h4 se puede hacer mas rápido con article*3>img+h4-->
-            <article>
+            <article onmouseover="IzquierdaDerecha('iframe1');">
                 <br>
                 <h4>Impresora FDM: </h4>
                 <div class="texto">
@@ -148,7 +149,7 @@
                     <p>información disponible sobre este tipo de impresoras y el coste necesario para</p>
                     <p>imprimir una figura 3D es relativamente barato. Es la mejor opción para</p>
                     <p>usuarios particulares.</p><br><br><br>
-                    <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe id="iframe1" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
             </article>
             <article>
@@ -162,7 +163,7 @@
                     <p>impresoras FDM. El inconveniente es que tienes que lavar y curara las piezas</p>
                     <p>para que se endurezcan después de imprimirlas a demás este tipo de</p>
                     <p>tecnología requiere un mayor mantenimiento y son mucho más caras.</p><br>
-                    <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe id="iframe2" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
             </article>
             <article>
@@ -174,7 +175,7 @@
                     <p>impresoras de resina a un público más domestico siendo mucho mas baratas y</p>
                     <p>con los mismos resultados el inconveniente es el mantenimiento al igual que</p>
                     <p>las SLA.</p><br>
-                    <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe id="iframe3" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
             </article>
             <article>
@@ -186,7 +187,7 @@
                     <p>todo en la creación de productos para la industria, como centros de enseñanza,</p>
                     <p>centros de investigación, laboratorios, etc. Se suelen usar para producción de</p>
                     <p>prototipos funcionales y de series cortas, principalmente por empresas.</p><br>
-                    <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe id="iframe4" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
             </article>
             <article>
@@ -200,7 +201,7 @@
                     <p>pequeñas, por eso es un tipo de impresora que destaca en la industria de los</p>
                     <p>implantes, aeroespacial… y todas aquellas que requieren piezas únicas o con</p>
                     <p>propiedades especiales.</p><br>
-                    <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe id="iframe5" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
             </article>
             <article>
@@ -211,7 +212,7 @@
                     <p>mas bien como máquina industrial. Esta tecnología puede hacer objetos 3D en</p>
                     <p>una amplia cantidad de colores y materiales. Esta tecnología es utilizada para</p>
                     <p>imprimir piezas de plástico, metal … que luego se fusionarán en un horno.</p><br><br><br><br>
-                    <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <iframe id="iframe6" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
                 </div>
             </article>
         </div>
@@ -326,12 +327,12 @@
         <br>
     </section>
 
-    <section id="distribuidores_precio">
+    <section id="distribuidores_precio" onmouseover="IzquierdaDerecha('distribuidores01');IzquierdaDerecha('distribuidores02')">
         <h2 style="text-align: center;">Distribuidores: </h2>
         <div class="contenedor">
             <!--<br>
             <h2></h2><br><br>-->
-            <div class="distribuidores01">
+            <div id="distribuidores01" class="izquierda distribuidores01">
                 <ul>
                     <li><a href="https://www.amazon.es/">Amazon</a></li>
                     <li><a href="https://www.mediamarkt.es/">Media Markt</a></li>
@@ -342,7 +343,7 @@
                     <li><a href="http://www.dx.com/">Dx Deal Extreme</a></li>
                 </ul><br>
             </div>
-            <div class="distribuidores02">
+            <div id="distribuidores02" class="derecha distribuidores02">
                     <li><a href="http://ultra-lab.net/tienda">Ultra-Lab</a></li>
                     <li><a href="http://www.makershed.com/">Maker Shed</a></li>
                     <li><a href="http://www.iniciativas3d.com/">Iniciativa3D</a></li>
@@ -373,5 +374,6 @@
         </div>
         <br>
     </footer>
+    <p class="prueba" id="prueba">eeeeeeeeeeeee</p>
 </body>
 </html>
