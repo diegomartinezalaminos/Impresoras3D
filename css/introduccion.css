@@ -11,12 +11,12 @@
 
 
 #instalacion {
-    background: rgb(246, 236, 253);
+    background: #fff;
 }
 
 #instalacion .texto {
     color: black;
-    background: rgb(246, 236, 253);
+    background: #fff;
 }
 
 #instalacion h2 {

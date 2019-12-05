@@ -93,3 +93,12 @@ footer .contenedor {
         width: 1350px; /*a partir de ordenador todo va a tener un ancho maximo de 1000px*/
     }
 }
+
+@media (min-width:1024px){
+    .marcas a img {
+        opacity:0.4;
+    }
+    .marcas a img:hover {
+        opacity:1;
+    }
+}
