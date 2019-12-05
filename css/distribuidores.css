@@ -8,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: rgb(246, 236, 253);
 }
 
 .distribuidores01 {
