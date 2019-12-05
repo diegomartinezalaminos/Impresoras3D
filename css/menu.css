@@ -59,4 +59,6 @@ header label {
     header label { /*Quitamos el simbolo del mostrar mas del menú*/
         display: none;
     }
+
 }
+
