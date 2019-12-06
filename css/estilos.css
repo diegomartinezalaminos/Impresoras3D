@@ -2,7 +2,7 @@
   este css es el que se importa en el html el cual a su vez importa a todos los css para de esta manera tener un mayor orden
 */
 
-@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap');
+
 @import url(menu.css);
 @import url(banner.css);
 @import url(tipo.css);
