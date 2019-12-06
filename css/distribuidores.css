@@ -1,17 +1,18 @@
-#distribuidores_precio {
+
+#distribuidores_precio { /*Estilos de base para trabajar posteriormente*/  
     background: #fff;
     color: #333;
     padding: 20px;
 }
 
-#distribuidores_precio .contenedor {
+#distribuidores_precio .contenedor { /*Colocamos esto para que todo lo que haya en el contenedor sea lo mas responsive posible*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: #fff;
 }
 
-.distribuidores01 {
+.distribuidores01 { /*Dividimos la lista en dos partes para poner una enfrente de otra*/
     float: left;
     padding-left: 6vw;
     padding-right: 6vw;
@@ -19,19 +20,19 @@
 
 }
 
-#distribuidores01 a{
+#distribuidores01 a{ /*Damos estilos a los enlaces de la parte de la lista 1*/
     text-decoration: none;
     color: black;
 }
 
-.distribuidores02 {
+.distribuidores02 {  /*Dividimos la lista en dos partes para poner una enfrente de otra*/
     /*float: left;*/
     padding-left: 6vw;
     padding-right: 6vw;
     padding-top: 3vh;
 }
 
-#distribuidores02 a{
+#distribuidores02 a{ /*Damos estilos a los enlaces de la parte de la lista 2*/
     text-decoration: none;
     color: black;
 }

@@ -1,3 +1,7 @@
+/*Esta es la pagina de estilos principal donde se dan estio a los apartados mas globales de la página
+  este css es el que se importa en el html el cual a su vez importa a todos los css para de esta manera tener un mayor orden
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Pragati+Narrow&display=swap');
 @import url(menu.css);
 @import url(banner.css);
@@ -7,16 +11,20 @@
 @import url(distribuidores.css);
 @import url(movimiento.css);
 
+
+/*Se quitan los márgenes, padding... para poder trabajar en la pagina desde 0 como si fuera un lienzo en blanco*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Se establece un tipo de letra y color de fondo*/
 body{
     font-family: 'Pragati Narrow', sans-serif;
     background:#fff;
-    overflow-x: hidden;
+    overflow-x: hidden; /*Esto lo he puesto par los moviles que son muy estrecho (dudo que existan)
+    no se desconfigure la página y salga por el fondo blanco por la izquierda*/
 }
 
 header{
@@ -35,8 +43,7 @@ header{
     no se pegue todo el contenido de la pagina en las esquinas
     y de un pequeño margen para que cuando se vea en el movil este bien*/
     width: 98%;
-    margin: auto;
-    
+    margin: auto;  
 }
 
 h1 {
@@ -52,7 +59,8 @@ section {
     /*margin-bottom: 25px;*/
 }
 
-#footer {
+/*damos estilo al footer*/
+#footer { 
     background-color: #333;
     color: white;
 }
@@ -68,6 +76,7 @@ footer .contenedor {
     font-size: 20px;
 }
 
+/*Damos estilos a los simbolos de las redes sociales las cuales fueno estraidas de la página fontello*/
 .sociales {
     width: 100%;
     text-align: center;
@@ -80,26 +89,16 @@ footer .contenedor {
     border-radius: 40px;
     background-color:white;
 }
-
-
 .sociales a {
     color: #333;
     text-decoration: none;
 }
+
 
 @media (min-width:1400px) { /*Hacemos un mediacueling para cambiar el tamaño de los contenedores
     a 1000 para que de esta forma se alineen todos en el centro dejando un margen a la izquierda y
     derecha de 12px*/
         .contenedor {
         width: 1350px; /*a partir de ordenador todo va a tener un ancho maximo de 1000px*/
-    }
-}
-
-@media (min-width:1024px){
-    .marcas a img {
-        opacity:0.4;
-    }
-    .marcas a img:hover {
-        opacity:1;
     }
 }

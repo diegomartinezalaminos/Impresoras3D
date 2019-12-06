@@ -17,12 +17,12 @@
             <label class ="icon-menu" for = "menu-bar"></label> <!--Para que se pueda activar y desactivar el botón-->    
             <nav class="menu">
                 <a href="#">Inicio</a>
-                <a href="#">Introducción</a>
-                <a href="#">Tipos</a>
-                <a href="#">Funcionamiento</a>
-                <a href="#">Instalación</a>
-                <a href="#">Marcas</a>
-                <a href="#">Precios_Distribuidores</a>
+                <a href="#introduccion01">Introducción</a>
+                <a href="#tiposimpresoras">Tipos</a>
+                <a href="#funcionamiento">Funcionamiento</a>
+                <a href="#instalacion">Instalación</a>
+                <a href="#info">Marcas</a>
+                <a href="#distribuidores_precio">Precios_Distribuidores</a>
             </nav>
         </div>   
     </header>
@@ -36,10 +36,12 @@
         </div>-->
     </section>
 
-    <section class = "introduccion">
+    <section class = "introduccion" onmouseover="aparecer('intro');" id="introduccion01">
         <div class="contenedor">
             <br>
-            <h2>¿Qué es una impresora 3D?</h2><br>
+            <br>
+            <h2 style="font-family:Algerian; font-size: 30px;">¿Qué es una impresora 3D?</h2><br>
+            <div class = "opacidad0" id="intro">
             <div class="texto">
             <p>En resumen una impresora 3D es una máquina capaz de imprimir figuras con
                volumen (3D) a partir de un diseño hecho por ordenador.
@@ -53,17 +55,19 @@
             </p>
             <br>
             </div>
+            </div>
         </div>
     </section>
 
-    <section class = "tipo" onmouseover = "aparecer('tipo1');aparecer('tipo2');aparecer('tipo3');aparecer('tipo4');aparecer('tipo5');aparecer('tipo6')">
+    <section class = "tipo" onmouseover = "IzquierdaDerecha('tipo1'); IzquierdaDerecha('tipo2'); IzquierdaDerecha('tipo3');IzquierdaDerecha('tipo4');IzquierdaDerecha('tipo5');IzquierdaDerecha('tipo6')" id="tiposimpresoras">
         <br>
-        <h3>Tipos de Impresora 3D: </h3>
+        <br>
+        <h3 style="font-family:Algerian; font-size: 30px;" >Tipos de Impresora 3D: </h3><br>
         <div class="contenedor">
             <!--Para crear los articles con las imagenes y el h4 se puede hacer mas rápido con article*3>img+h4-->
-            <article class="opacidad0" id="tipo1">
-                <img src="img/article1.jpg" >
-                <h4>Impresora FDM: </h4>
+            <article class="derecha" id="tipo1">
+                <img src="img/FDM.jpg" >
+                <br><br><h4 style="font-family:Algerian; font-size: 20px;">Impresora FDM: </h4><br>
                 <div class="texto">
                     <p>Son las impresoras más populares baratas y accesibles entre todos los tipos de</p>
                     <p>impresoras que existen. A demás son las máquinas más sencillas y hay mucha</p>
@@ -72,9 +76,9 @@
                     <p>usuarios particulares.</p><br>
                 </div>
             </article>
-            <article class="opacidad0" id="tipo2">
-                <img src="img/article2.jpg" >
-                <h4>Impresora SLA:</h4>
+            <article class="izquierda" id="tipo2">
+                <img src="img/SLA.jpg" >
+                <br><br><h4 style="font-family:Algerian; font-size: 20px;">Impresora SLA:</h4><br>
                 <div class="texto">
                     <p>Este tipo de impresoras 3D funcionan a partir de un tanque de resina</p>
                     <p>fotosintética y un rayo láser UV.Las mayores ventajas de este tipo de</p>
@@ -85,9 +89,9 @@
                     <p>tecnología requiere un mayor mantenimiento y son mucho más caras.</p><br>
                 </div>
             </article>
-            <article class="opacidad0" id="tipo3">
-                <img src="img/article3.jpg" >
-                <h4>Impresora DLP:</h4>
+            <article class="derecha" id="tipo3">
+                <img src="img/DLP.jpg" >
+                <br><br><h4 style="font-family:Algerian; font-size: 20px;">Impresora DLP:</h4><br>
                 <div class="texto">
                     <p>Las impresoras DLP (Digital Light Processing) esta tecnología es la hermana</p>
                     <p>gemela de la SLA. Pero a diferencia de las impresoras SLA , esta lleva las</p>
@@ -96,9 +100,9 @@
                     <p>las SLA.</p><br>
                 </div>
             </article>
-            <article class="opacidad0" id="tipo4">
-                <img src="img/article3.jpg" >
-                <h4>Impresora SLS:</h4>
+            <article class="izquierda" id="tipo4">
+                <img src="img/SLS.jpg" >
+                <br><br><h4 style="font-family:Algerian; font-size: 20px;">Impresora SLS:</h4><br>
                 <div class="texto">
                     <p>Esta tecnología es como conocida como Sinterizado Selectivo por Láser</p>
                     <p>funciona de una manera similar a la SLA. Esta impresora es utilizada sobre</p>
@@ -107,9 +111,9 @@
                     <p>prototipos funcionales y de series cortas, principalmente por empresas.</p><br>
                 </div>
             </article>
-            <article class="opacidad0" id="tipo5">
-                <img src="img/article3.jpg" >
-                <h4>Impresora SLM: </h4>
+            <article class="derecha" id="tipo5">
+                <img src="img/SLM.jpg" >
+                <br><br><h4 style="font-family:Algerian; font-size: 20px;">Impresora SLM: </h4><br>
                 <div class="texto">
                     <p>Esta impresora tiene como nombre Fusión Selectiva por Láser y se usa para</p>
                     <p>fabricar piezas de metal. Estas impresoras crean figuras en materiales como</p>
@@ -120,9 +124,9 @@
                     <p>propiedades especiales.</p><br>
                 </div>
             </article>
-            <article class="opacidad0" id="tipo6">
-                <img src="img/article3.jpg" >
-                <h4>Impresora BJ:</h4>
+            <article class="izquierda" id="tipo6">
+                <img src="img/BJ.jpg" >
+                <br><br><h4 style="font-family:Algerian; font-size: 20px;">Impresora BJ:</h4><br>
                 <div class="texto">
                     <p>Este tipo de impresoras no están destinadas a los usuarios domésticos si no</p>
                     <p>mas bien como máquina industrial. Esta tecnología puede hacer objetos 3D en</p>
@@ -137,92 +141,95 @@
 
     <section class = "tipo" id="funcionamiento" onmouseover = "IzquierdaDerecha('iframe1');IzquierdaDerecha('iframe2');IzquierdaDerecha('iframe3');IzquierdaDerecha('iframe4');IzquierdaDerecha('iframe5');IzquierdaDerecha('iframe6');">
         <br>
-        <h3>Tipos de Impresora 3D: </h3>
+        <br>
+        <h3 style="font-family:Algerian; font-size: 30px;">Funcionamiento Impresoras 3D: </h3><br>
         <div class="contenedor">
             <!--Para crear los articles con las imagenes y el h4 se puede hacer mas rápido con article*3>img+h4-->
-            <article onmouseover="IzquierdaDerecha('iframe1');">
+            <article>
                 <br>
-                <h4>Impresora FDM: </h4>
+                <h4 style="font-family:Algerian; font-size: 20px;">Impresora FDM:</h4><br>
                 <div class="texto">
-                    <p>Son las impresoras más populares baratas y accesibles entre todos los tipos de</p>
-                    <p>impresoras que existen. A demás son las máquinas más sencillas y hay mucha</p>
-                    <p>información disponible sobre este tipo de impresoras y el coste necesario para</p>
-                    <p>imprimir una figura 3D es relativamente barato. Es la mejor opción para</p>
-                    <p>usuarios particulares.</p><br><br><br>
-                    <iframe id="iframe1" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p>Estas impresoras funden un filamento de polímero (plástico) mediante una</p>
+                    <p>boquilla de metal la cual funde el polímero y deposita capa a capa el material</p>
+                    <p>fundido, de esta manera se va formando la figura 3D. Este material puede ser</p>
+                    <p>de diferentes tipos de plásticos la mayoría suelen ser ABS o PLA</p>
+                    <p>(esta última es biodegradable)</p><br>
+                    <iframe id="iframe1" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/WHO6G67GJbM"></iframe>
                 </div>
             </article>
             <article>
                 <br>
-                <h4>Impresora SLA:</h4>
+                <h4 style="font-family:Algerian; font-size: 20px;">Impresora SLA:</h4><br>
                 <div class="texto">
-                    <p>Este tipo de impresoras 3D funcionan a partir de un tanque de resina</p>
-                    <p>fotosintética y un rayo láser UV.Las mayores ventajas de este tipo de</p>
-                    <p>impresoras 3D comparado con las de filamento esta tecnología permite obtener</p>
-                    <p>grandes acabados y figuras con detalles que no podría hacerse con las</p>
-                    <p>impresoras FDM. El inconveniente es que tienes que lavar y curara las piezas</p>
-                    <p>para que se endurezcan después de imprimirlas a demás este tipo de</p>
-                    <p>tecnología requiere un mayor mantenimiento y son mucho más caras.</p><br>
-                    <iframe id="iframe2" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p>Cuando el proceso comienza, el láser “dibuja” la primera capa de la impresión</p>
+                    <p>en la resina fotosensible la cual se solidifica las ser iluminada con el láser.</p>
+                    <p>Dicha luz es guiada a las coordenadas apropiadas mediante un espejo el cual</p>
+                    <p>es controlado por el procesador de la impresora 3D.</p><br>
+                    <p>Después de realizar la primera capa, la plataforma baja o eleva dependiendo</p>
+                    <p>de la impresora, de acuerdo con el espesor de la capa para permitir que fluya</p>
+                    <p>mas resina por debajo o por arriba y de esta forma se pueda terminar el</p>
+                    <p>proceso hasta adquirir la figura 3D</p><br>
+                    <iframe id="iframe2" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/yW4EbCWaJHE"></iframe>
                 </div>
             </article>
             <article>
                 <br>
-                <h4>Impresora DLP:</h4>
+                <h4 style="font-family:Algerian; font-size: 20px;">Impresora DLP:</h4><br>
                 <div class="texto">
-                    <p>Las impresoras DLP (Digital Light Processing) esta tecnología es la hermana</p>
-                    <p>gemela de la SLA. Pero a diferencia de las impresoras SLA , esta lleva las</p>
-                    <p>impresoras de resina a un público más domestico siendo mucho mas baratas y</p>
-                    <p>con los mismos resultados el inconveniente es el mantenimiento al igual que</p>
-                    <p>las SLA.</p><br>
-                    <iframe id="iframe3" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p>Este tipo de impresoras funcionan igual que las de <strong>SLA</strong> pero con la única</p>
+                    <p>diferencia de que la fuente de luz ultravioleta es un proyector o un foco LED y</p>
+                    <p>una pantalla para dibujar la imagen de la capa sobre el tanque de resina</p><br><br>
+                    <iframe id="iframe3" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/97ARLiTHjX0"></iframe>
                 </div>
             </article>
             <article>
                 <br>
-                <h4>Impresora SLS:</h4>
+                <h4 style="font-family:Algerian; font-size: 20px;">Impresora SLS:</h4><br>
                 <div class="texto">
-                    <p>Esta tecnología es como conocida como Sinterizado Selectivo por Láser</p>
-                    <p>funciona de una manera similar a la SLA. Esta impresora es utilizada sobre</p>
-                    <p>todo en la creación de productos para la industria, como centros de enseñanza,</p>
-                    <p>centros de investigación, laboratorios, etc. Se suelen usar para producción de</p>
-                    <p>prototipos funcionales y de series cortas, principalmente por empresas.</p><br>
-                    <iframe id="iframe4" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p>Las impresoras de SLS también llamadas Sinterizado Selectivo por Láser.</p>
+                    <p>Funciona de manera similar a la <strong>SLA,</strong> pero el láser de la impresora es mucho</p>
+                    <p>más potente y se usa para fusionar pero sin llegar a fundir un lecho de polvo de</p>
+                    <p>polímero, que generalmente es nylon (poliamida)</p><br><br>
+                    <iframe id="iframe4" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/9E5MfBAV_tA"></iframe>
                 </div>
             </article>
             <article>
                 <br>
-                <h4>Impresora SLM: </h4>
+                <h4 style="font-family:Algerian; font-size: 20px;">Impresora SLM:</h4><br>
                 <div class="texto">
-                    <p>Esta impresora tiene como nombre Fusión Selectiva por Láser y se usa para</p>
-                    <p>fabricar piezas de metal. Estas impresoras crean figuras en materiales como</p>
-                    <p>aluminio, plata, acero, titanio …</p>
-                    <p>Es ideal para la creación de piezas de compleja estructura o en cantidades muy</p>
-                    <p>pequeñas, por eso es un tipo de impresora que destaca en la industria de los</p>
-                    <p>implantes, aeroespacial… y todas aquellas que requieren piezas únicas o con</p>
-                    <p>propiedades especiales.</p><br>
-                    <iframe id="iframe5" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p>Las impresoras con la tecnología SLM (Fusión Selectiva con Láser) tienen un</p>
+                    <p>funcionamiento similar a las impresoras <strong>SLS.</strong> El procedimiento es el mismo, un</p>
+                    <p>láser irradia una superficie de polvo metálico (aluminio, plata, acero, titanio</p>
+                    <p>etc.), sólo que en esta tecnología a veces se llega a fundir el material</p><br><br>
+                    <iframe id="iframe5" class="izquierda" width="400" height="250" src="https://www.youtube.com/embed/te9OaSZ0kf8"></iframe>
                 </div>
             </article>
             <article>
                 <br>
-                <h4>Impresora BJ:</h4>
+                <h4 style="font-family:Algerian; font-size: 20px;">Impresora BJ:</h4><br>
                 <div class="texto">
-                    <p>Este tipo de impresoras no están destinadas a los usuarios domésticos si no</p>
-                    <p>mas bien como máquina industrial. Esta tecnología puede hacer objetos 3D en</p>
-                    <p>una amplia cantidad de colores y materiales. Esta tecnología es utilizada para</p>
-                    <p>imprimir piezas de plástico, metal … que luego se fusionarán en un horno.</p><br><br><br><br>
-                    <iframe id="iframe6" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <p>Este tipo de impresión 3D es completamente diferente a las mencionadas</p>
+                    <p>anteriormente ya que no se utiliza ningún laser. Este sistema de inyección de</p>
+                    <p>aglutinante hace uso de dos materiales:</p>
+                    <p>--> Uno a base de polvo (yeso, cerámica, metal, plástico etc.)</p>
+                    <p>--> Un material adhesivo que actúa en el momento que se une a la capa de polvo</p>
+                    <p>El proceso de impresión empieza como el de una impresora 2D avanzando</p>
+                    <p>capa a capa en cuanto termina con una capa comienza con la siguiente hasta</p>
+                    <p>obtener la figura 3D mediante la superposición de dichas capas, posteriormente</p>
+                    <p>se extrae el resultado el cual esta enterrado en polvo del material elegido.</p><br><br>
+                    <iframe id="iframe6" class="derecha" width="400" height="250" src="https://www.youtube.com/embed/deA-7b3guT4"></iframe>
                 </div>
             </article>
         </div>
         <br>
     </section>
 
-    <section  id="instalacion" class = "introduccion">
-        <div class="contenedor">
+    <section  id="instalacion" class = "introduccion" onmouseover="aparecer('instalar');">
+        <div class="contenedor" >
             <br>
-            <h2>Instalación:</h2><br>
+            <br>
+            <h2 style="font-family:Algerian; font-size: 30px;color: black;">Instalación:</h2><br>
+            <div class="opacidad0" id="instalar">
             <div class="texto">
             <p>
                 La instalación de los programas necesarios para hacer un diseño 3D varían
@@ -241,86 +248,87 @@
             </p>
             <br><br>
             </div>
+            </div>
         </div>
     </section>
 
     <section id="info">
         <br>
-        <h3>Marcas de Impresora 3D:</h3><br>
+        <h3 style="font-family:Algerian; font-size: 30px;">Marcas de Impresora 3D:</h3><br>
         <div class="contenedor">
-            <base target="_blank">
+            <!--<base target="_blank">-->
             <div class="marcas">
-                <a href="https://www.xyzprinting.com/es-ES/"><img src="img/marca1.jpg" alt=""></a>
+                <a href="https://www.xyzprinting.com/es-ES/" target="_blank"><img src="img/marca1.jpg" alt=""></a>
                 <h4>XYZ PRINTING</h4>
             </div>
 
             <div class="marcas">
-                <a href="http://www.stratasys.com/"><img src="img/marca2.jpg" alt=""></a>
+                <a href="http://www.stratasys.com/" target="_blank"><img src="img/marca2.jpg" alt=""></a>
                 <h4>STRATASYS FOR A 3D WORLD</h4>
             </div>
 
             <div class="marcas">
-                <a href="https://www.lpfrg.com/"><img src="img/marca3.jpg" alt=""></a>
+                <a href="https://www.lpfrg.com/" target="_blank"><img src="img/marca3.jpg" alt=""></a>
                 <h4>LEAPFROG 3D PRINTERS</h4>
             </div>
 
             <div class="marcas">
-                <a href="http://www.flashforge.com/"><img src="img/marca4.jpg" alt=""></a>
+                <a href="http://www.flashforge.com/" target="_blank"><img src="img/marca4.jpg" alt=""></a>
                 <h4>FLASHFORGE</h4>
             </div>
 
             <div class="marcas">
-                <a href=""><img src="img/bq-logo.png" alt=""></a>
+                <a href="https://www.bq.com/es/" target="_blank"><img src="img/bq-logo.png" alt="" ></a>
                 <h4>BQ</h4>
             </div>
 
             <div class="marcas">
-                <a href="http://formlabs.com/"><img src="img/formlabs-logo.png" alt=""></a>
+                <a href="http://formlabs.com/" target="_blank"><img src="img/formlabs-logo.png" alt=""></a>
                 <h4>Formlabs</h4>
             </div>
 
             <div class="marcas">
-                <a href="http://www.makerdreams.it/"><img src="img/maker-dreams-logo.png" alt=""></a>
+                <a href="http://www.makerdreams.it/" target="_blank"><img src="img/maker-dreams-logo.png" alt=""></a>
                 <h4>Maker Dreams</h4>
             </div>
 
             <div class="marcas">
-                <a href="https://www.ultimaker.com/"><img src="img/ultimaker-logo.png" alt=""></a>
+                <a href="https://www.ultimaker.com/" target="_blank"><img src="img/ultimaker-logo.png" alt=""></a>
                 <h4>Ultimaker</h4>
             </div>
 
             <div class="marcas">
-                <a href="https://www.monoprice.com/category/pages/6"><img src="img/Monoprice_Logo.jpg" alt=""></a>
+                <a href="https://www.monoprice.com/category/pages/6" target="_blank"><img src="img/Monoprice_Logo.jpg" alt=""></a>
                 <h4>Monoprice</h4>
             </div>
 
             <div class="marcas">
-                <a href="https://www.bcn3dtechnologies.com/en/"><img src="img/bcn3d-logo.png" alt=""></a>
+                <a href="https://www.bcn3dtechnologies.com/en/" target="_blank"><img src="img/bcn3d-logo.png" alt=""></a>
                 <h4>BCN3D</h4>
             </div>
 
             <div class="marcas">
-                <a href="http://www.robo3dprinter.com/"><img src="img/robo_3d_printer-logo.png" alt=""></a>
+                <a href="http://www.robo3dprinter.com/" target="_blank"><img src="img/robo_3d_printer-logo.png" alt=""></a>
                 <h4>RoBo 3D Printer</h4>
             </div>
 
             <div class="marcas">
-                <a href="http://airwolf3d.com/"><img src="img/airwolf-3d-logot.png" alt=""></a>
+                <a href="http://airwolf3d.com/" target="_blank"><img src="img/airwolf-3d-logot.png" alt=""></a>
                 <h4>Airwolf3D</h4>
             </div>
 
             <div class="marcas">
-                <a href="https://www.lulzbot.com/"><img src="img/Lulzbot_Logo.jpg" alt=""></a>
+                <a href="https://www.lulzbot.com/" target="_blank"><img src="img/Lulzbot_Logo.jpg" alt=""></a>
                 <h4>LULZBOT</h4>
             </div>
 
             <div class="marcas">
-                <a href="http://www.solidoodle.com/"><img src="img/solidoodle-logo.png" alt=""></a>
+                <a href="http://www.solidoodle.com/" target="_blank"><img src="img/solidoodle-logo.png" alt=""></a>
                 <h4>Solidooble</h4>
             </div>
 
             <div class="marcas">
-                <a href="https://www.up3d.com/"><img src="img/up-logo.png" alt=""></a>
+                <a href="https://www.up3d.com/" target="_blank"><img src="img/up-logo.png" alt=""></a>
                 <h4>UP 3D Printer</h4>
             </div>
         </div>
@@ -328,29 +336,29 @@
     </section>
 
     <section id="distribuidores_precio" onmouseover="IzquierdaDerecha('distribuidores01');IzquierdaDerecha('distribuidores02')">
-        <h2 style="text-align: center;">Distribuidores: </h2>
+        <br>
+        <br>
+        <h2 style="text-align: center;font-family:Algerian; font-size: 30px;">Distribuidores: </h2>
         <div class="contenedor">
-            <!--<br>
-            <h2></h2><br><br>-->
             <div id="distribuidores01" class="izquierda distribuidores01">
                 <ul>
-                    <li><a href="https://www.amazon.es/">Amazon</a></li>
-                    <li><a href="https://www.mediamarkt.es/">Media Markt</a></li>
-                    <li><a href="http://sicnova3d.com/">Sicnova</a></li>
-                    <li><a href="http://www.ebay.com/bhp/3d-printer">eBay</a></li>
-                    <li><a href="http://www.elcorteingles.es/">El Corte Ingles</a></li>
-                    <li><a href="https://www.imakr.com/eu/en/">¡Mark</a></li>
-                    <li><a href="http://www.dx.com/">Dx Deal Extreme</a></li>
+                    <li><a href="https://www.amazon.es/" target="_blank">Amazon</a></li>
+                    <li><a href="https://www.mediamarkt.es/" target="_blank">Media Markt</a></li>
+                    <li><a href="http://sicnova3d.com/" target="_blank">Sicnova</a></li>
+                    <li><a href="http://www.ebay.com/bhp/3d-printer" target="_blank">eBay</a></li>
+                    <li><a href="http://www.elcorteingles.es/" target="_blank">El Corte Ingles</a></li>
+                    <li><a href="https://www.imakr.com/eu/en/" target="_blank">¡Mark</a></li>
+                    <li><a href="http://www.dx.com/" target="_blank">Dx Deal Extreme</a></li>
                 </ul><br>
             </div>
             <div id="distribuidores02" class="derecha distribuidores02">
-                    <li><a href="http://ultra-lab.net/tienda">Ultra-Lab</a></li>
-                    <li><a href="http://www.makershed.com/">Maker Shed</a></li>
-                    <li><a href="http://www.iniciativas3d.com/">Iniciativa3D</a></li>
-                    <li><a href="http://www.makergal.es/">MakerGal</a></li>
-                    <li><a href="http://www.3dcpi.com/es/">3DCPI</a></li>
-                    <li><a href="https://www.reprap-3d-printer.com/">Emotion-Tech</a></li>
-                    <li><a href="http://www.dima3d.com/">Dima3D</a></li>
+                    <li><a href="http://ultra-lab.net/tienda" target="_blank">Ultra-Lab</a></li>
+                    <li><a href="http://www.makershed.com/" target="_blank">Maker Shed</a></li>
+                    <li><a href="http://www.iniciativas3d.com/" target="_blank">Iniciativa3D</a></li>
+                    <li><a href="http://www.makergal.es/" target="_blank">MakerGal</a></li>
+                    <li><a href="http://www.3dcpi.com/es/" target="_blank">3DCPI</a></li>
+                    <li><a href="https://www.reprap-3d-printer.com/" target="_blank">Emotion-Tech</a></li>
+                    <li><a href="http://www.dima3d.com/" target="_blank">Dima3D</a></li>
                 </ul><br>
             </div>
             <div class="precios">
@@ -366,14 +374,14 @@
     <footer id = "footer">
         <br>
         <div class="contenedor">
+            <br>
             <p class="copy">Impresoras 3D &copy 2019:</p>
             <div class="sociales">
-                <a class = "icon-github" href="#"></a>
-                <a class = "icon-gmail" href="#"></a>
+                <a class = "icon-github" href="https://github.com/diegomartinezalaminos" target="_blank"></a>
+                <a class = "icon-gmail" href="diegomartinezalaminos@gmail.com" target="_blank"></a>
             </div>
         </div>
         <br>
     </footer>
-    <p class="prueba" id="prueba">eeeeeeeeeeeee</p>
 </body>
 </html>

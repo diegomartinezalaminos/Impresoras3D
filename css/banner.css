@@ -8,7 +8,7 @@
     height: 200px;*/
 }
 
-#banner img {
+#banner img { /*Adaptamos el tamaño de la imagen del banner*/
     display: block;
     width: 100%;
     height: 100%;
@@ -20,10 +20,6 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #fff;
-}
-
-#banner h2 {
-    font-size: 28px;
 }
 
 #banner a { /*Damos los estilos al <a> para que parezca un botón*/
@@ -40,32 +36,8 @@
     background: rgba(51, 51, 51, 0.8);
 }
 
-@media (min-width:480px) {
-    #baner h2 {
-        font-size:  40px;
-    }
-
-    #baner a {
-        margin-top: 25px;
-    }
-}
-
-/*@media (min-width:768px){ /*Cuando esté con un ancho de 768px (tablet) queremos que la imagen de baner suba 
-    un poco y se haga mas pequeña para ello utilizamos el -100px*//*
-    #banner {
-        height: 300px;
-        overflow: hidden;
-    }
-
-    #banner img {
-        height: auto;
-        margin-top: -100px;
-
-    }
-}*/
-
-@media (min-width:700px){ /*Cuando esté con el ancho de ordenadors queremos que la imagen del banner
-    sea mas pequeña para ello le ponemos un top -200px para que suba*/
+@media (min-width:700px){ /*Cuando esté con el ancho de tablet queremos que la imagen del banner
+    sea mas pequeña para ello le ponemos un top -80px para que suba*/
     #banner img {
         margin-top: -80px; 
         
@@ -73,9 +45,17 @@
 }
 
 @media (min-width:1024px){ /*Cuando esté con el ancho de ordenadors queremos que la imagen del banner
+    sea mas pequeña para ello le ponemos un top -140px para que suba*/
+    #banner img {
+        margin-top: -140px; 
+        
+    }
+}
+
+@media (min-width:1350px){ /*Cuando esté con el ancho de 1350px queremos que la imagen del banner
     sea mas pequeña para ello le ponemos un top -200px para que suba*/
     #banner img {
-        margin-top: -160px; 
+        margin-top: -200px; 
         
     }
 }

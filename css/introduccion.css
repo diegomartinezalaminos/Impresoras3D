@@ -1,11 +1,13 @@
+
+
 .introduccion {
     text-align: center;
     color: #fff;
     background: rgba(51, 51, 51, 0.945);
 }
 
-.introduccion .texto{
-    padding-left: 7vw;
+.introduccion .texto{ /*Hacemos esto para que el texto este centrado pero la primera letra de cada frase empiece desde un mismo punto*/
+    padding-left: 7vw; /*Al utilizar estas medidas se adapta al ancho de la pantalla*/
     padding-right: 4vw;
 }
 
@@ -19,6 +21,4 @@
     background: #fff;
 }
 
-#instalacion h2 {
-    color: black;
-}
+

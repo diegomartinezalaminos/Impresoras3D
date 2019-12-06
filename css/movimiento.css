@@ -1,27 +1,35 @@
+
+/*Esta clase se utiliza para que el contenedor vuelva a su posiscion (solo se le aplica a las etiquetas con la clase izquierda o derecha)*/
 .IzquierdaDerecha{
-    transition: all 1s;
+    transition: all 2.3s;
     transform: translateX(0vw);
 }
-
+/*Para que es contenedor se esconda a la izquierda*/
 .izquierda{
-    transition: all 1s;
+    transition: all 0s;
     transform: translateX(-100vw);
 }
+
+/*Para que es contenedor se esconda a la derecha*/
 .derecha{
-    transition: all 1s;
+    transition: all 0s;
     transform: translateX(+100vw);
 }
 
+/*Para que el contenedor desaparezca*/
 .opacidad0 {
-    transition: all 3s;
+    transition: all 0s;
     opacity: 0;
 }
+
+/*Para que el contenedor aparezca (solo se le aplica a las etiquetas con la clase anterior)*/
 .opacidad1 {
-    transition: all 3s;
+    transition: all 3.7s;
     opacity: 1;
 }
 
-@media (max-width:1024px){
+/*Para que solo se muestren estos efector en pantallas de 1024px (no queremos que se muestre en moviles ni tablet)*/
+@media (max-width:1023px){
     .izquierda{
         transform: translateX(0vw);
     }
@@ -30,8 +38,18 @@
     }
 }
 
-@media (max-width:1024px){
+/*Para que solo se muestre este efecto en pantallas de 1024px (no queremos que este efecto se aplique a moviles ni tablet)*/
+@media (max-width:1023px){
     .opacidad0{
         opacity: 1;
+    }
+}
+/*Para que solo se muestre este efecto en pantallas de 1024px (no queremos que este efecto se aplique a moviles ni tablet)*/
+@media (min-width:1024px){
+    .marcas a img {
+        opacity:0.4;
+    }
+    .marcas a img:hover {
+        opacity:1;
     }
 }
